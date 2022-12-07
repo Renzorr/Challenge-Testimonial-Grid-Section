@@ -1,0 +1,9 @@
+.purple-card {
+  background: url(/images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: right 7vw top 1vh;
+  background-color: $moderate-violet;
+  background-size: 18%;
+  color: $white;
+  grid-column: 1 / 3;
+}

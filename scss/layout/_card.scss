@@ -1,0 +1,46 @@
+.grid-card {
+  padding: 30px;
+  border-radius: 10px;
+
+  @media (hover: hover) {
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 17px;
+
+  img {
+    border-radius: 50%;
+    border: 3px solid $white;
+  }
+
+  p {
+    opacity: 0.5;
+  }
+}
+
+.profile-content {
+  padding-top: 20px;
+
+  h1,
+  h2 {
+    font-size: 28px;
+  }
+
+  p {
+    padding-top: 20px;
+    font-size: 18px;
+    opacity: 0.6;
+  }
+}
+
+.white-card {
+  background-color: $white;
+  color: $very-dark-blackish-blue;
+}

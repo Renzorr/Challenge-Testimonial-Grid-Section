@@ -1,12 +1,21 @@
 @media (max-width: 1050px) {
-    .grid-container {
-      display: flex;
-      flex-direction: column;
-      transform: scale(0.9);
-    }
-  
-    .right-w-card {
-      width: 100%;
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    scale: 0.9;
+  }
+
+  .profile-content {
+    h1,
+    h2 {
+      font-size: 25px;
     }
   }
-  
+  .right-w-card {
+    width: 100%;
+  }
+
+  .purple-card {
+    background-size: 33%;
+  }
+}
