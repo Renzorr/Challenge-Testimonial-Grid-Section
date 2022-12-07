@@ -1,0 +1,12 @@
+@media (max-width: 1050px) {
+    .grid-container {
+      display: flex;
+      flex-direction: column;
+      transform: scale(0.9);
+    }
+  
+    .right-w-card {
+      width: 100%;
+    }
+  }
+  

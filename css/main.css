@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  transition: 0.4s;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: hsl(210deg, 46%, 95%);
+}
+
+.grid-container {
+  position: relative;
+  max-width: 1500px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  scale: 0.8;
+  animation: entrance 2s;
+}
+@keyframes entrance {
+  0% {
+    opacity: 0;
+    transform: translateY(-300%);
+    filter: blur(15px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.grid-card {
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 17px;
+}
+.profile-info img {
+  border-radius: 50%;
+  border: 3px solid hsl(0deg, 0%, 100%);
+}
+.profile-info p {
+  opacity: 0.5;
+}
+
+.profile-content {
+  padding-top: 20px;
+}
+.profile-content h2 {
+  font-size: 28px;
+}
+.profile-content p {
+  padding-top: 20px;
+  font-size: 18px;
+  opacity: 0.6;
+}
+
+.purple-card {
+  background: url(/images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: right 7vw top 1vh;
+  background-color: hsl(263deg, 55%, 52%);
+  color: hsl(0deg, 0%, 100%);
+  grid-column: 1/3;
+}
+
+.gray-card {
+  background-color: hsl(217deg, 19%, 35%);
+  color: hsl(0deg, 0%, 100%);
+  grid-column: 3/4;
+}
+
+.white-card {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(219deg, 29%, 14%);
+}
+
+.black-card {
+  background-color: hsl(219deg, 29%, 14%);
+  color: hsl(0deg, 0%, 100%);
+  grid-column: 2/4;
+}
+
+.right-w-card {
+  grid-row: 1/3;
+  grid-column: 4/5;
+  width: 90%;
+}
+
+.left-w-card {
+  grid-column: 1/2;
+}
+
+@media (max-width: 1050px) {
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    transform: scale(0.9);
+  }
+  .right-w-card {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
