@@ -64,7 +64,7 @@ main {
   0% {
     opacity: 0;
     transform: translateY(-300%);
-    filter: blur(15px);
+    filter: blur(5px);
   }
   100% {
     opacity: 1;
@@ -78,6 +78,7 @@ main {
 @media (hover: hover) {
   .grid-card:hover {
     transform: scale(1.05);
+    box-shadow: 10px 10px 10px rgba(167, 162, 162, 0.479);
   }
 }
 
@@ -130,9 +131,9 @@ main {
 }
 
 .purple-card {
-  background-image: url(/images/bg-pattern-quotation.svg);
+  background-image: url(../images/bg-pattern-quotation.svg);
   background-repeat: no-repeat;
-  background-position: right 7vw top 1vh;
+  background-position: right 4vw top 2vh;
   background-color: hsl(263deg, 55%, 52%);
   background-size: 18%;
   color: hsl(0deg, 0%, 100%);
@@ -159,7 +160,7 @@ main {
     width: 100%;
   }
   .purple-card {
-    background-size: 33%;
+    background-size: 30%;
   }
 }
 
